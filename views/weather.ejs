@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="weather.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+</head>
+<body>
+<%- include('partials/header') %>    
+<main>
+<div class="upper-div">
+<p1>amax weather</p1>
+<p>enter location / current location weather</p>
+<div class="input-div">
+  <input class="location-input" type="text" placeholder="  Enter Location">
+  <a class="location-but">current location weather</a>
+  </div>
+
+</div>
+<div class="lower-div">
+  
+</div>
+</main>
+<%- include('partials/footer') %>  
+</body>
+<script src="js/updateui.js"></script>
+<script src="js/weather.js"></script>
+</html>

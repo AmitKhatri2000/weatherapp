@@ -1,0 +1,174 @@
+main{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: block;
+    text-transform: capitalize;
+
+}
+
+.upper-div{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+.upper-div p1{
+ 
+   font-size: 40px;
+   letter-spacing: 1px;
+   font-weight: 500;
+   color: rgba(0,0,0,0.4);
+ 
+}
+
+.upper-div p{
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: rgba(0,0,0,0.8);
+    margin-bottom: 10px;
+ }
+
+ .input-div{
+     width: 98%;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+    
+ }
+
+.location-but{
+    padding: 5px;
+    width: 49%;
+    background-color: rgba(40, 133, 133, 0.5);
+    cursor: pointer;
+    color: whitesmoke;
+    text-transform: capitalize;
+    box-sizing: border-box;
+
+}
+
+
+.location-but:hover{
+    color: black;
+    background-color: whitesmoke;
+}
+
+.location-input{
+
+    padding: 5px 5px 5px 10px;
+    width: 49%;
+    border: none;
+    background-color: rgba(129, 236, 236,.5);
+    outline:none;
+    box-sizing: border-box;
+
+  
+}
+
+
+.input-div input:focus{
+    border: 1px solid rgba(0,0,0,0.4);
+}
+
+.lower-div{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 170px;
+    }
+
+.e-para{
+    padding: 5px;
+    color: #D8000C;
+   
+}    
+
+.lower-div span{
+margin-bottom: 20px;
+font-weight: 600;
+display: block;
+}
+
+.lower-div img{
+position: absolute;
+border-radius: 40%;
+width: 40px;
+height: 40px;
+top: 20px;
+left: 10px;
+
+}
+
+.descrip{
+    margin-top: 10px;
+   width: fit-content;
+   margin-left: 40px;
+}
+
+.temp{
+    padding-top: 10px;
+}
+
+@media only screen and (max-width: 340px) {
+    main{
+        width: 90%;
+        
+    }
+    
+.upper-div p1{
+ font-size: 33px;
+ display: block; 
+ margin-bottom: 20px;
+  
+ }
+ 
+ 
+  .input-div{
+      width: 98%;
+      margin: 0 auto;
+      display: block;
+      
+  }
+ .location-input{
+  
+    width: 99%;
+    margin: 10px auto;
+ }
+
+ .location-but{ 
+    display: block;
+     width: 99%;
+     margin-bottom: 10px;
+
+ }
+
+ .lower-div{
+    min-height: 150px;
+ }
+ 
+
+ .lower-div span{
+    margin-bottom: 20px;
+   
+    }
+    
+    .lower-div img{
+    top: 20px;
+       
+    }
+    
+    .descrip{
+     margin-top: 10px;
+    }
+    
+    .temp{
+        padding-top: 10px;
+    }
+
+  }

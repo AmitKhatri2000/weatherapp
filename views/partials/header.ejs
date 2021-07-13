@@ -1,0 +1,103 @@
+<link rel="shortcut icon"  type="image/svg" href="img/night.svg">
+<style>
+*{
+margin: 0;
+padding: 0;
+text-decoration: none;
+list-style: none;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    max-width: 100vw;
+    min-height: 100vh;
+    position: relative;
+}
+
+
+body::after {
+  content: '';
+  display: block;
+  height: 30px; 
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    transition: background-color 1s;
+  
+}
+
+header:hover{
+    background-color:rgba(0, 0, 0, 0.7);
+}
+
+header:hover h3{
+    color: white;
+}
+
+h3{
+padding-left: 10px;
+line-height: 50px;
+text-transform: capitalize;
+color: black;
+font-size: 22px;
+transition: color 1s;
+
+}
+
+ul{
+    height: 100%;
+    
+}
+
+li{
+    display: inline-block;
+    padding-right: 10px;
+
+}
+
+li a{
+    line-height: 50px;
+    text-transform: capitalize;
+    color: black ;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+  background-color: whitesmoke;
+  
+}
+ 
+footer p{
+    color: black ;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    
+} 
+
+li a:hover{
+color: white;
+}
+
+</style>
+
+<header> 
+<h3>amax weather</h3>   
+<ul>
+ <li>
+ <a href="/">home</a>    
+ </li>   
+ <li>
+<a href="/contact">contact</a>    
+</li>   
+</ul>
+</header>
