@@ -41,7 +41,8 @@ getcoordinates();
 
 
 locationinput.addEventListener('keyup' , (e)=>{
-    if (e.code === "Enter") {
+    console.log(e);
+    if (e.keyCode === 13) {
        const cityname = locationinput.value.trim();
        if (cityname) {
         fetchweather(cityname);
