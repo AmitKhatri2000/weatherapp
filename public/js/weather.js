@@ -2,16 +2,17 @@ const locationbut = document.querySelector('.location-but')
 const locationinput = document.querySelector('.location-input')
 
 const fetchweather = async(data1,data2)=>{
-if (!data2) {
-var url = `http://api.weatherstack.com/current?access_key=22176b9877efb6970875940c1c7833f4&query=${data1}`
-}
-else{
-var url = `http://api.weatherstack.com/forecast?access_key=22176b9877efb6970875940c1c7833f4&query=${data1},${data2}`
-}
-const res = await fetch(url);
+
+const res = await fetch('/weather-data' ,{
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({data1 , data2})
+
+})
+
 const data = await res.json();
-console.log(data);
-updateui(data);
+console.log(data.body);
+updateui(data.body); 
 
 }
 
